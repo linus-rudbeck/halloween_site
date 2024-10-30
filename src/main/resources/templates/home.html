@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monster home</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Monster home</h1>
+    <p>I've created a monster!</p>
+</header>
+
+<main>
+
+    <h2>Create monster</h2>
+
+    <p>Can you create a monster?</p>
+
+    <form action="/" method="post">
+        <label for="monsterName">Monster name:</label>
+        <input minlength="3" type="text" name="monsterName" id="monsterName" placeholder="Enter monster name">
+        <button type="submit">Save</button>
+    </form>
+
+    <h2>Monster</h2>
+
+    <p>Here are your monsters...</p>
+
+    <ul>
+        <li th:each="monster: ${monsters}" th:utext="${monster.monsterName}" ></li>
+    </ul>
+
+</main>
+
+<footer>
+    <p>Copy that! &copy;</p>
+</footer>
+
+</body>
+</html>
