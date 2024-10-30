@@ -67,7 +67,7 @@ label {
     margin-bottom: 0.5rem;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
     padding: 0.5rem;
     width: 60%;
     border-radius: 5px;
